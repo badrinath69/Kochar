@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/addressDetails">
+
+    <activity
+        android:id="@+id/addressDetails"
+        android:name="com.pivotalsoft.kochar.activities.AddressDetails"
+        android:label="activity_address_details"
+        tools:layout="@layout/activity_address_details" />
+    <activity
+        android:id="@+id/addAddressActivity"
+        android:name="com.pivotalsoft.kochar.activities.AddAddressActivity"
+        android:label="activity_add_address"
+        tools:layout="@layout/activity_add_address" />
+</navigation>

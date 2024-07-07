@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/nsv5"
+    android:layout_height="match_parent"
+    tools:context=".activities.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarcartactivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/kocharcolor"
+        android:scrollbarFadeDuration="@integer/material_motion_duration_medium_2"
+        android:textAlignment="viewStart"
+
+
+
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        android:layout_alignParentTop="true"
+
+        app:titleTextColor="@color/white">
+
+<!--        <TextView-->
+
+
+<!--            android:id="@+id/backbtcartactivity"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"-->
+<!--            android:drawableStart="@drawable/ic_round_arrow_back_24"></TextView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/backbtcartactivity2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="32dp"-->
+<!--            android:text="Final Cart"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"></TextView>-->
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/listitem_finalcartproduct"
+        android:layout_above="@+id/bottamlayout"
+        android:layout_below="@+id/toolbarcartactivity"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/bottamlayout"
+        android:textColor="@color/kocharcolor"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottamlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradientsplashbg2"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6 items | Rs 3900"
+            android:textColor="@android:color/white"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="checkout"
+
+
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

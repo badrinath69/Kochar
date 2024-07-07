@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:id="@+id/parentLayout">
+
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rladdress"
+        android:layout_marginTop="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:ellipsize="end"
+            android:textColor="@color/hintGray"
+            android:text="TextView" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtMobile"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignStart="@+id/txtName"-->
+<!--            android:layout_below="@+id/txtAddress"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="TextView"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_toStartOf="@+id/btnDelete"-->
+<!--            tools:ignore="NotSibling"-->
+<!--            />-->
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:focusable="false"
+            android:clickable="true"/>
+
+        </RadioGroup>
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/hintGray"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="66dp"-->
+<!--            android:visibility="visible"/>-->
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/txtEdit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:text="Edit"-->
+<!--            android:visibility="gone"-->
+<!--            android:background="@drawable/roundedorangeoulint"-->
+<!--            android:textColor="@color/kocharcolor"-->
+<!--            android:textAlignment="center"-->
+<!--            />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/roundedorangeoulint"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="@color/kocharcolor" />
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#28d4d4d4"/>-->
+
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dimen_40dp"
+         android:id="@+id/btnDelivery"
+         android:textColor="@color/black"
+         android:text="Choose Address"
+         android:layout_marginStart="@dimen/dimen_20dp"
+         android:layout_marginEnd="@dimen/dimen_20dp"
+         android:layout_marginBottom="10dp"
+         android:background="@drawable/rounded_cartedittext"/>-->
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

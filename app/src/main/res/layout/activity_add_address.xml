@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nsv4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.AddAddressActivity"
+    android:background="@color/colorGray">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaraddaddressactivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/kocharcolor"
+        android:scrollbarFadeDuration="@integer/material_motion_duration_medium_2"
+        android:textAlignment="viewStart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+
+        app:titleTextColor="@color/white">
+
+<!--        <TextView-->
+
+
+<!--            android:clickable="true"-->
+<!--            android:id="@+id/backbtaddaddressactivity"-->
+<!--            android:drawableStart="@drawable/ic_round_arrow_back_24"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+
+<!--        <TextView-->
+<!--            android:layout_marginLeft="32dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Select Address"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbaraddaddressactivity"
+
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:text="+  Add Address"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/kocharcolor" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addressRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAddAddress"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/listitem_address"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants" />
+
+    <!--  <Button
+          android:id="@+id/btnDelivery"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentStart="true"
+          android:background="@color/colorAccent"
+          android:text="Choose Address"
+          android:textColor="#ffffff"
+          android:visibility="visible" />-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlert"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:text="No address Found."
+        android:textColor="@color/kocharcolor"
+        android:visibility="gone"/>
+
+</RelativeLayout>

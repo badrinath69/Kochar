@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/my_profile"
+       android:title="My Profile"
+        ></item>
+
+    <item android:id="@+id/my_orders"
+        android:title="My Orders"
+        ></item>
+    <item android:id="@+id/my_notifications"
+        android:title="My Notifications"
+        ></item>
+    <item android:id="@+id/my_issues"
+        android:title="My Issues"
+        ></item>
+
+    </group>
+  <item
+      android:title="Communicate">
+      <menu>
+
+          <item android:id="@+id/idShare"
+              android:title="Share"
+              ></item>
+
+          <item android:id="@+id/idAboutus"
+              android:title="About Us"
+              ></item>
+          <item android:id="@+id/idfaq"
+              android:title="FAQ'S"
+              ></item>
+          <item android:id="@+id/idreturnpolicy"
+              android:title="Return Policy"
+              ></item>
+          <item android:id="@+id/dtermsandconditions"
+              android:title="Terms &amp; Conditions"
+              ></item>
+
+          <item android:id="@+id/idprivacypolicy"
+              android:title="Privacy &amp; Policy"
+              ></item>
+          <item android:id="@+id/idlogout"
+              android:title="Logout"
+              ></item>
+
+      </menu>
+  </item>
+
+
+</menu>

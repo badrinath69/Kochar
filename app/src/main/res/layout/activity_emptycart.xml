@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".emptycart">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_icon_cart_empty1"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Your cart is Empty"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/kocharcolor"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center"
+        android:text="please goto home"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnGotohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/kocharcolor"
+        android:fontFamily="@font/source_sans_pro"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="goto home"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

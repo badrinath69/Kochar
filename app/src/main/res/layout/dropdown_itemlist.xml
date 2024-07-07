@@ -1,0 +1,50 @@
+<TextView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_weight="1"
+android:id="@+id/searchdet1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="14dp"
+android:textColor="@color/black"
+android:textStyle="bold"
+android:textSize="16sp"
+android:text="text"
+    ></TextView>
+
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:weightSum="2"-->
+<!--    android:orientation="vertical">-->
+<!--    <TextView-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/searchdet1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="14dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:text="text"-->
+<!--        ></TextView>-->
+<!--    <TextView-->
+
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/searchdet2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:padding="14dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="@font/source_sans_pro"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="text2"-->
+<!--        ></TextView>-->
+
+<!--</LinearLayout>-->
+
+
+

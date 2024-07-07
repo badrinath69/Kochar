@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@color/amazoncolor"
+    app:cardElevation="4dp"
+    tools:targetApi="lollipop">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kochar Mart"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/txtStorename"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:id="@+id/txtOrderStatus"
+                    android:layout_gravity="center"
+                    android:drawableTint="@color/greennew"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/kochar_logo"
+                    android:id="@+id/image_thumbnail"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+                            android:text="Invoice Id : " />
+
+                        <TextView
+                            android:id="@+id/txtInvoiceId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:text="ST0000C9901D" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/txtpaymentTitle"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14dp"
+                            android:alpha="0.90"
+                            android:text="Payment Type : " />
+
+                        <TextView
+                            android:id="@+id/txtPaymentStatus"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:textSize="14dp"
+                            android:maxLines="1"
+                            tools:text="COD" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14dp"
+                            android:alpha="0.90"
+                            android:text="Final Bill : &#8377; " />
+
+                        <TextView
+                            android:id="@+id/txtFinalBill"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:maxLines="1"
+                            tools:text="900" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="September 27, 7:27 PM"
+                        android:textSize="12sp"
+                        android:id="@+id/txtDate"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/hintGray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dashed"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:text="CALL"
+                android:textColor="@color/greennew"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hintGray" />
+
+            <TextView
+                android:id="@+id/txtIssues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:text="Issues?"
+                android:textColor="@color/greennew"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hintGray" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Confirm \nDelivery"
+                android:textAllCaps="true"
+                android:textColor="@color/greennew"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginRight="20sp"-->
+<!--            android:layout_marginLeft="20sp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:background="@color/black"/>-->
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
